@@ -608,7 +608,7 @@ class ParallelClusterConfig(object):
         self.__check_option_absent_awsbatch("max_queue_size")
         self.__check_option_absent_awsbatch("spot_price")
 
-        self.__validate_os("awsbatch", self.__get_os(), ["alinux"])
+        self.__validate_os("awsbatch", self.__get_os(), ["alinux", "sles1203"])
 
         if self.__config.has_option(self.__cluster_section, "compute_instance_type"):
             compute_instance_type = self.__config.get(self.__cluster_section, "compute_instance_type")

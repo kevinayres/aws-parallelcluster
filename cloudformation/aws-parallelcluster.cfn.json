@@ -460,7 +460,7 @@
     "BaseOS": {
       "Description": "Base OS type for cluster AMI",
       "Type": "String",
-      "Default": "alinux",
+      "Default": "sles1203",
       "ConstraintDescription": "must be a supported base OS",
       "AllowedValues": [
         "centos6",
@@ -1347,7 +1347,8 @@
         "centos6": "ami-009c08111f57a2d4c",
         "centos7": "ami-05f6a646767bf0c87",
         "ubuntu1404": "ami-085bb9cfafd2e3b3a",
-        "ubuntu1604": "ami-034bffb8da06d6951"
+        "ubuntu1604": "ami-034bffb8da06d6951",
+        "sles1203": "ami-00c75ff88724f9e7"
       }
     },
     "OSFeatures": {
@@ -1369,6 +1370,10 @@
       },
       "ubuntu1604": {
         "User": "ubuntu",
+        "RootDevice": "/dev/sda1"
+      },
+      "sles1203": {
+        "User": "ec2-user",
         "RootDevice": "/dev/sda1"
       }
     },
