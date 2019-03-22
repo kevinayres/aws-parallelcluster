@@ -467,7 +467,8 @@
         "centos7",
         "alinux",
         "ubuntu1404",
-        "ubuntu1604"
+        "ubuntu1604",
+        "sles1203"
       ]
     },
     "ScaleDownIdleTime": {
